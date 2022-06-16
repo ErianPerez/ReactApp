@@ -1,6 +1,6 @@
 .navbar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    display: 'flex';
+    justify-content: 'center';
+    align-items: 'center';
+    height: '90vh'
 }

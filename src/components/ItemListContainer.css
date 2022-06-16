@@ -1,8 +1,9 @@
-.cuerpo{
-    height: auto;
-    background-color: rgb(127, 157, 255);
+.itemlist{
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
     flex: row;
     justify-content: space-around;
     align-items: center;
+
 }

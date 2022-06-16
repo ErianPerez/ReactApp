@@ -1,17 +1,14 @@
 import './Body.css';
-import Card from './Card';
+import ItemListContainer from './ItemListContainer';
 
 function Body(){
     return(
         <section className='cuerpo'>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <ItemListContainer/>
+            <ItemListContainer/>
         </section>
 
     );
 }
 
 export default Body;
-
