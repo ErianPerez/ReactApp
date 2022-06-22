@@ -2,8 +2,11 @@
     margin-top: auto;
     margin-bottom: auto;
     display: flex;
-    flex: row;
     justify-content: space-around;
     align-items: center;
-
+    flex-direction: column;
+}
+.group{
+    display: flex;
+    flex-direction: row;
 }

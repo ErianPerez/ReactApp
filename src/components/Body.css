@@ -2,7 +2,8 @@
     height: auto;
     background-color: rgb(127, 157, 255);
     display: flex;
-    flex: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-top: 7%;
 }

@@ -1,7 +1,7 @@
 import './ItemListContainer.css';
 import Card from './Card';
 
-function ItemListContainer(){
+function ItemListContainer(props){
     return(
         //API PARA GENERAR PRODUCTOS
                 // const options = {
@@ -16,20 +16,24 @@ function ItemListContainer(){
         // 	.then(response => response.json())
         // 	.then(response => console.log(response))
         // 	.catch(err => console.error(err));
+        
         <div className='itemlist'>
             <div>
+                <h2>Bienvenido {props.name}! Continue con su compra</h2>
+            </div>
+            <div className='group'>
                 <Card name="Vinos" price="500"/>
                 <Card name="Cervezas" price="250"/>
                 <Card name="Aperitivos" price="50"/>
                 <Card name="Caramelos" price="10"/>
             </div>
-            <div>
+            <div className='group'>
                 <Card name="Carnes" price="1200"/>
                 <Card name="Aceites" price="250"/>
                 <Card name="Gaseosas" price="200"/>
                 <Card name="Aguas Sabor." price="150"/>
             </div>
-            <div>
+            <div className='group'>
                 <Card name="Productos de Baño" price="120"/>
                 <Card name="Remedios" price="700"/>
                 <Card name="Galletas" price="80"/>
