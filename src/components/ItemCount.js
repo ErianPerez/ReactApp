@@ -1,9 +1,8 @@
 import { useState } from "react";
 import './ItemCount.css';
-import ItemListContainer from "./ItemListContainer";
 
 
-function ItemCount({stock, initial}){
+function ItemCount({stock, initial, price}){
     const[num, setNum] = useState(initial);
     const sumar = () =>{
         if (num<stock){
@@ -17,8 +16,11 @@ function ItemCount({stock, initial}){
     }
     const Add2Cart = () => {
         if (num>0){
-            console.log('Agregado(s) ' + (num) + ' Item(s) al Carrito!');
-            alert('Agregado(s) ' + (num) + ' Item(s) al Carrito!');
+            var number = Number(price.replace(/[^0-9.-]+/g,""));
+            var result = num * number
+            result = Math.round(result * 100) / 100
+            console.log('Agregado(s) ' + (num) + ' Item(s) al Carrito! ' + 'Precio Final: $' + (result));
+            alert('Agregado(s) ' + (num) + ' Item(s) al Carrito! ' + 'Precio Final: $' + (result));
             setNum(0);
         }
     }
