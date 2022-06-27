@@ -6,3 +6,16 @@
     justify-content: center;
     align-items: center;
 }
+.buttons1{
+    border-radius: 10px;
+    border: 2px;
+    border-style: solid;
+    background-color: white;
+}
+.buttons2{
+    border-radius: 10px;
+    border: 2px;
+    width: 10%;
+    border-style: solid;
+    background-color: white;
+}

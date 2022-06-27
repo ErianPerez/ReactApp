@@ -1,15 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, React } from 'react';
 import './ItemListContainer.css';
 import ItemList from './ItemList';
 
 function ItemListContainer(props){
-
-    const [info, setInfo] = useState([])
-
+    const [productosFetch, setProductosFetch] = useState([])
     useEffect(() =>{
         fetch('data.json')
-        .then((resp) => resp.json())
-        .then((data) => setInfo(data))
+            .then((res) => res.json())
+            .then(res => setProductosFetch(res))
+            .catch(err => console.log(err))
     }, [])
 
     return(    
@@ -18,7 +17,7 @@ function ItemListContainer(props){
                 <h2>Bienvenido {props.name}! Continue con su compra</h2>
             </div>
             <div className='itemlist' >
-                <ItemList items={info}></ItemList>
+                <ItemList items={productosFetch}></ItemList>
             </div>
         </div>
     );

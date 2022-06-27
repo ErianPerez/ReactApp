@@ -27,10 +27,10 @@ function ItemCount({stock, initial, price}){
     return(
         <div><p>Cantidad: {num}</p>
             <div className="botones">
-                <button onClick= {sumar}>+</button>
-                <button onClick= {restar}>-</button>
+                <button className="buttons2" onClick= {sumar}>+</button>
+                <button className="buttons2" onClick= {restar}>-</button>
             </div>
-            <button onClick= {Add2Cart}>Agregar al Carrito!</button>
+            <button className="buttons1" onClick= {Add2Cart}>Agregar al Carrito!</button>
         </div>
     );
 }
