@@ -3,9 +3,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 3;
-    justify-content: center;
     gap: 10px;
     gap: 10px 20px; /* row-gap column gap */
     row-gap: 10px;
     column-gap: 20px;
+    justify-content: center;
+    align-items: stretch;
 }

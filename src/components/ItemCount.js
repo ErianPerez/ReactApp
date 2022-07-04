@@ -2,10 +2,10 @@ import { useState } from "react";
 import './ItemCount.css';
 
 
-function ItemCount({stock, initial, price}){
+function ItemCount({count, initial, price}){
     const[num, setNum] = useState(initial);
     const sumar = () =>{
-        if (num<stock){
+        if (num<count){
             setNum(num + 1)
         }
     }
