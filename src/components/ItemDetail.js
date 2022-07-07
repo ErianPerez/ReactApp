@@ -1,22 +1,25 @@
 
+import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";  
-  
+import './itemDetail.css';
+
 function ItemDetail(props) {  
-    const viewDetail = () => {
-        Swal.fire({
-            title: props.name,
-            text: props.description,
-            imageUrl: props.image,
-            imageWidth: 600,
-            imageHeight: 500,
-            imageAlt: 'Custom image',
-            footer: '$' + props.price,
-          })
-    }
-    return (    
-        <div>  
-          <button onClick={viewDetail}>Ver Detalle del Producto</button>    
-        </div>  
+    console.log(props)
+    return (
+      <body className="body">
+        <div className='detail'>  
+          <div className='cuadro'>
+            <img src={props.props.image} className='image'></img>
+          </div>
+          <div className='datos'>
+              <h3 className='titleDetail'>{props.props.title}</h3>
+              <h4 className='precio'>$ {props.props.price}</h4>  
+              <p className="texto">{props.props.description}</p>   
+              <h6 className='footerDetail'>Stock Disponible: {props.props.count}</h6>
+              
+          </div>
+        </div> 
+      </body> 
     );  
   }  
 

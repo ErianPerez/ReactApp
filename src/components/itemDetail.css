@@ -1,0 +1,53 @@
+.detail{
+    width: 60%;
+    height:60%;
+    margin-left: 20%;
+    flex-direction: row;
+    display: flex;
+    border-radius: 5px;
+    align-items:stretch;
+    background-color: #a2b9bc;
+    margin-top: 2%;
+}
+.cuadro{
+    height: 250px;
+    width: auto;
+    padding-top: 50px;
+} 
+ .titleDetail{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(218, 218, 218);
+    padding: 5px;
+} 
+ .footerDetail{
+    width: 100%;
+    margin-top:auto;
+    padding: 5px;
+    
+    background-color: rgb(218, 218, 218);
+}
+.image{
+    height: 300px;
+    width: 320px;
+    background-color: rgb(218, 218, 218);
+} 
+ .datos{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-left: auto;
+    align-items: center;
+}
+.precio{
+    text-align: center;
+}
+.body{
+    padding-top: 133px;
+    padding-bottom: 110px;
+    background-color: rgb(127, 157, 255);
+    height: 100vh;
+}
+.texto{
+    text-align: center;
+}
