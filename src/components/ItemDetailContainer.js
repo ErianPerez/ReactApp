@@ -22,14 +22,12 @@ function ItemDetailContainer(props) {
     }, [])
 
     return (
-        <body>
             <div className='div' >
                 <div >
-                {isLoading &&<div className='contenedor'> <h2 className='cargando'>Cargando el Producto...</h2></div>}
+                {isLoading && <div className='divplus'> <div className='contenedor'>  <h2 className='cargando'>Cargando el Producto...</h2> </div> </div>}
                 {!isLoading && <ItemDetail props={item}></ItemDetail>}
                 </div>
             </div>
-        </body>
     );
 }
 

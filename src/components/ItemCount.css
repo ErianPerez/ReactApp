@@ -11,6 +11,7 @@
     border: 2px;
     border-style: solid;
     background-color: white;
+    padding:5px;
 }
 .buttons2{
     border-radius: 10px;
@@ -18,4 +19,9 @@
     width: 10%;
     border-style: solid;
     background-color: white;
+    padding: 8px;
+    padding-right: 15px;
+}
+.cantidad{
+    background-color: wheat;
 }

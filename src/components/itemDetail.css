@@ -10,9 +10,11 @@
     margin-top: 2%;
 }
 .cuadro{
-    height: 250px;
+    height: 100%;
     width: auto;
     padding-top: 50px;
+    background-color: white;
+    padding-bottom: 12px;
 } 
  .titleDetail{
     box-sizing: border-box;

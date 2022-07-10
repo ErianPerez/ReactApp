@@ -4,7 +4,7 @@ import './Item.css';
 import ItemCount from './ItemCount';
 
 
-function Item({id, name, price,count, image, description}){
+function Item({id, name, price,count, image}){
     return(
         <div className='card'>
             <h4 className='title'>{name}</h4>
